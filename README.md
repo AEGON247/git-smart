@@ -8,7 +8,9 @@
 
 ## ✨ Demo
 
-<i>try it yourself .....
+<i>try it yourself ..... JK</i>
+
+[![Watch demo on YouTube](public/logo.png)](https://youtu.be/oykTN-JMV5M)
 
 ---
 
