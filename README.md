@@ -1,7 +1,6 @@
-# git-smart ⚡️
+# git-smart ⚡️![](https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github&logoColor=white)
 
-[![Go Version][go-shield]][]
-[![Release Version][release-shield]][]
+[![Go Version](https://img.shields.io/badge/go-1.25-blue?style=flat-square&logo=go&logoColor=white)](https://go.dev/doc/go1.25) [<br>![Release Version](https://img.shields.io/github/v/release/AEGON247/git-smart?style=flat-square&logo=github)](https://github.com/AEGON247/git-smart/releases)
 
 **Tired of the repetitive `git checkout main`, `git pull`, `git checkout feature`, `git rebase main` dance?** `git-smart sync` automates syncing your feature branch with the default branch in one command.
 
@@ -9,7 +8,7 @@
 
 ## ✨ Demo
 
-
+<i>try it yourself .....
 
 ---
 
@@ -69,7 +68,7 @@ brew install git-smart
 
 ### Manual Download
 
-Download the latest binary for your operating system from the [**GitHub Releases**][release-url] page and add it to your system's PATH.
+Download the latest binary for your operating system from the [**GitHub Releases**](https://github.com/AEGON247/git-smart/releases) page and add it to your system's PATH.
 
 -----
 
@@ -87,11 +86,6 @@ The tool will guide you through the process with clear, colored output. If a reb
 
 ## 🤝 Contributing
 
-Contributions are welcome\! Please feel free to submit issues or pull requests on the [GitHub repository][https://github.com/AEGON247/git-smart].
+Contributions are welcome\! Please feel free to submit issues or pull requests on the [GitHub repository](https://github.com/AEGON247/git-smart).
 
 -----
-
-
-[release-url]: https://www.google.com/search?q=https://github.com/AEGON247/git-smart/releases
-[repo-url]: https://www.google.com/search?q=https://github.com/AEGON247/git-smart
-[license-url]: https://www.google.com/search?q=https://github.com/AEGON247/git-smart/blob/main/LICENSE
