@@ -56,7 +56,7 @@ Spend less time juggling Git commands and more time coding\!
 
 ```bash
 # First, tap the repository (only need to do this once):
-brew tap AEGON247/tap
+brew tap AEGON247/homebrew-tap
 
 # Then, install git-smart:
 brew install git-smart
