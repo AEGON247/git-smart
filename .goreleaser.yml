@@ -1,0 +1,82 @@
+# .goreleaser.yml
+
+# ... (other sections like build:, archives:, checksum:, etc.) ...
+
+# Add this brews section
+brews:
+  -
+    # Name of the Homebrew tap repository. Defaults to `homebrew-tap`.
+    # Create this repository in your GitHub account first.
+    # It MUST be public.
+    tap:
+      owner: AEGON247 # Your GitHub username
+      name: homebrew-tap # The name of the repository to create/use
+      # Optional: branch: main # Default is 'master' for taps, use 'main' if you prefer
+
+    # Optional: Set aCOMMIT author and message for the Homebrew formula.
+    commit_author:
+      name: goreleaserbot
+      email: goreleaser@carlosbecker.com
+    commit_msg_template: "Brew formula update for {{ .ProjectName }} version {{ .Tag }}"
+
+    # GOARM value used for building amd64 archives. Default is '6'
+    # goarm: '6'
+
+    # IDs of the archives to use. Defaults to all.
+    # ids:
+    #   - foo
+    #   - bar
+
+    # Path to the formula file template. Defaults to ./formula.rb.tmpl
+    # template: formula.rb.tmpl
+
+    # Repository to push the tap to.
+    # Defaults to the repository from tap.
+    # repository:
+    #   owner: github_user
+    #   name: homebrew-tap
+    #   branch: main
+    #   token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}" # defaults to github token
+
+    # Your app's homepage. Required.
+    homepage: "https://github.com/AEGON247/git-smart"
+
+    # Your app's description. Required.
+    description: "CLI tool to sync Git feature branches with the default branch."
+
+    # SPDX identifier of your app's license. Required.
+    license: "MIT"
+
+    # Setting this prevents goreleaser from uploading the built tarball to
+    # GitHub releases. You might want to do this if you publish your tarball to
+    # another place, like Bintray. Requires the download_strategy to be set.
+    # skip_upload: true
+
+    # Custom download strategy. Note that this MUST be set if `skip_upload` is true.
+    # Default is GitHubReleases strategie
+    # download_strategy: CurlDownloadStrategy
+
+    # Custom block for brew install command
+    # Can be used to specify alternate build dependencies, like specific Go versions..
+    # Default is empty.
+    # install: |
+    #   bin.install "program"
+    #   etc.install ".program.yaml" => "program.yaml"
+
+    # Specify for packages that have dependencies. Default is empty.
+    # dependencies:
+    #   - name: git
+    #   - name: zsh
+    #     type: optional
+
+    # Specify for packages that have conflicts. Default is empty.
+    # conflicts:
+    #   - svn
+    #   - bash
+
+    # Specify caveats. Default is empty.
+    # caveats: "How to use this binary"
+
+    # Test block for brew test command. Default is empty.
+    # test: |
+    #   system "#{bin}/program version"
