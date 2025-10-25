@@ -149,7 +149,7 @@ It performs the following steps:
 			popOutput, err := git.Run("stash", "pop")
 			if err != nil {
 				// Check if the error is just "No stash found" - might happen if stash was empty or applied during conflict resolution
-				if regexp.MustCompile(`(?i)No stash found`).MatchString(popOutput) || regexp.MustCompile(`(?i)Did not need to pop stash`).MatchString(popOutput) {
+				if regexp.MustCompile(`(?i)No stash found|No stash entries found`).MatchString(popOutput) || regexp.MustCompile(`(?i)Did not need to pop stash`).MatchString(popOutput) {
 					successColor.Println("Stash was empty or already applied.")
 				} else {
 					errorColor.Println("Error popping stash. Your stash is still saved.")
