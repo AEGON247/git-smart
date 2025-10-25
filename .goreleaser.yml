@@ -11,6 +11,7 @@ brews:
     tap:
       owner: AEGON247 # Your GitHub username
       name: homebrew-tap # The name of the repository to create/use
+      token: "{{ .Env.HOMEBREW_TAP_TOKEN }}" # Use the secret we created
       # Optional: branch: main # Default is 'master' for taps, use 'main' if you prefer
 
     # Optional: Set aCOMMIT author and message for the Homebrew formula.
