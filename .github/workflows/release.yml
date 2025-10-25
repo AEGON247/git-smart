@@ -8,6 +8,8 @@ on:
 
 jobs:
   goreleaser:
+    permissions:
+      contents: write # Needed for creating releases
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
